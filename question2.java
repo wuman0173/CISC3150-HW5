@@ -24,13 +24,12 @@ class question2
 		
 		long i = 0, InsideCircleCounter = 0;
 		double x, y;
-		while(i < 16000000000L)
+		while(i < 4000000000L)
 			{
 			x = Math.random();
 			y = Math.random();
 			//Math.random gives a random number between 0.0 and 1.0.
-			//This simulates plotting 16 billion points within the range of the square that has width/length of 0 to 1.
-			//Since we need 4 Billion dots in Quadrant One, we do 16 Billion in all four quadrants.
+			//This simulates plotting 4 billion points within the range of the square that has width/length of 0 to 1.
 			//The Area of Circle with Origin (0,0)... Area of Circle Radius 1 = PI. 
 			//The Standard Form of a circle is: x^2 + y^2 = 1
 			
@@ -40,11 +39,10 @@ class question2
 				}
 			i++;
 			}
-		double everything = ((InsideCircleCounter/4)/4000000000L);
-		System.out.println("Loop ran 16,000,000,000 times, InsideCircleCounter is: " + InsideCircleCounter);
-		System.out.println("1/4 of hitting inside Quadrant One of the Circle is: " + (InsideCircleCounter/4));
-		System.out.println("1/4 of 16 Billion is 4 Billion. So Estimate 4 Billion random dots fall within Quadrant One Square.");
-		System.out.println("(InsideCircleCounter/4)/4,000,000,000 = " + everything);
+		double everything = (InsideCircleCounter/4000000000L);
+		System.out.println("Loop ran 4,000,000,000 times, InsideCircleCounter is: " + InsideCircleCounter);
+		System.out.println("1/4 of hitting inside Quadrant One of the Circle is: " + (InsideCircleCounter/4.0));
+		System.out.println("The Probability of hitting inside the Fourth Quadrant of the Circle is " + everything);
 	
 		System.out.println("Area of 1/4 of a Circle with Radius of 1 is: (Pi*r^2)/4... which is: " + ((Math.PI*Math.pow(1,2))/4));
 		long endTime   = System.currentTimeMillis();
