@@ -1,1 +1,6 @@
-
+The PI Number is: 3.141592653589793
+Loop ran 4,000,000,000 times, InsideCircleCounter is: 3141580240
+1/4 of hitting inside Quadrant One of the Circle is: 785395060
+The Probability of hitting inside the Fourth Quadrant of the Circle is 0.78539506
+Area of 1/4 of a Circle with Radius of 1 is: (Pi*r^2)/4... which is: 0.7853981633974483
+Total time for program to complete: 897593
